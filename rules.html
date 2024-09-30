@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon game rule</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+}
+        header{
+    background-color :#402E7A;
+    text-align: center;
+    margin:0px;
+    padding: 0%;
+    height:40px;
+}
+h1 ,h2 {
+    color:#ffa600 ;
+    
+}
+body{
+    background-color: #4b70f5;
+}
+        .ruleno{
+            font-size: 20px;
+            color: #C0C0C0;
+            
+        }
+        .rule{
+            padding: 15px ;
+            background-color: #3e60d8;
+            border-radius: 20px;
+            color: #C0C0C0;
+            width: 90%;   
+            margin-top: 10px;
+            margin-left: 20px;
+            line-height: 1.5;
+        }
+        .btn{
+            text-align: center;
+            padding-top: 20px;
+        }
+        button{
+            background-color: #AD49E1;
+            font-size: 1rem;
+            border-radius: 10px;
+            flex-grow: 0;
+            text-align: center;
+            padding: 2px;
+        }
+        @media(max-width:500px){
+            .rule{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simon game rule</h1>
+    </header>
+    <main>
+        <div class="container">
+        <div class="rule">
+            <p class="ruleno">1.Press any key or click on button on mobile to start game.</p>
+            <p class="ruleno">2.Once the game begin single color will be clicked by computer.</p>
+            <p class="ruleno">3.click on same button pressed by the computer.</p>
+            <p class="ruleno">4.If patter of computer of computer and user match next level will start.</p>
+            <p class="ruleno">5.again computer will press single color.</p>
+            <p class="ruleno">6.Now user need to press previous color and current color pressed by computer.</p>
+            <p class="ruleno">7.If the patter is correct next level will begin and again user need to click every color from start of the game.</p>
+            <p class="ruleno">8.If wrong color is clicked then game is over.</p>
+        </div>
+        </div>
+        <div class="btn">
+            <form action="./index.html">
+             <button>Return to game</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
