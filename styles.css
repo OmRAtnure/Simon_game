@@ -1,0 +1,137 @@
+body {
+  text-align: center;
+  background-color: #402E7A;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  margin-top: 2%;
+  color: #ffa600;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.begin{
+  background-color: #AD49E1;
+    font-size: 1rem;
+    border-radius: 10px;
+    flex-grow: 0;
+    text-align: center;
+    width: auto;
+    visibility: hidden;
+}
+.tap{
+  background-color: #AD49E1;
+    font-size: 1rem;
+    border-radius: 10px;
+    flex-grow: 0;
+    text-align: center;
+    width: auto;
+    margin-bottom: 10px;
+}
+.function{
+  display: inline-flex;
+  align-self: center;
+  justify-content: center ;
+  flex-direction: column;
+}
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #5c4f83;
+    margin:  15% auto;
+    padding: 20px;
+    padding-top: 10px;
+    border: 1px solid #888;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.type{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 2px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 1100px){
+  .btn{
+    height: 135px;
+    width: 135px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  .container {
+   display: block;
+   width: 100%;
+   margin: auto;
+  }
+  #level-title{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+@media(max-width:500px){
+  
+  .begin{
+    visibility: visible;
+  }
+}

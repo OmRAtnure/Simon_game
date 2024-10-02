@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div lass="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+        
+
+      </div>
+    </div>
+    <div class="function">
+        <form class="" action="./rules.html">
+          <button class="rule tap">rules</button>
+        </form>
+        <button class="tap" id="difficulty-button">Difficulty: Hard</button>
+        <div id="difficulty-modal" class="modal">
+          <div class="modal-content">
+            <h2 class="current">Select Difficulty</h2>
+            <div class="type">
+              <label>
+                <input type="radio" name="difficulty" value="easy" > Easy
+              </label>
+              <label>
+                <input type="radio" name="difficulty" value="hard" checked> Hard
+              </label>
+            </div>
+            <button class="tap" id="apply-difficulty">Apply</button>
+          </div>
+        </div>
+      <button class="begin">start game</button>
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./game.js"></script>
+  
+</body>
+
+</html>
