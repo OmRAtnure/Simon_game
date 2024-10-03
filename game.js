@@ -144,6 +144,11 @@ $(window).on("keydown",function(){
 
 
 $('#difficulty-button').click(function () {
+    if(diff=="Hard"){
+        jQuery('input[value="hard"]').prop('checked', true);
+    }else{
+        $('input[value="easy"]').prop('checked', true);
+    }
     $('#difficulty-modal').show();
     
 });
